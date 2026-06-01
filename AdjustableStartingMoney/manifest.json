@@ -1,0 +1,16 @@
+{
+  "Name": "Adjustable Starting Money",
+  "Author": "VetoCV",
+  "Version": "1.0.0",
+  "Description": "Lets you choose how much money you start a new farm with.",
+  "UniqueID": "VetoCV.AdjustableStartingMoney",
+  "EntryDll": "AdjustableStartingMoney.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [],
+  "Dependencies": [
+    {
+      "UniqueID": "spacechase0.GenericModConfigMenu",
+      "IsRequired": false
+    }
+  ]
+}
