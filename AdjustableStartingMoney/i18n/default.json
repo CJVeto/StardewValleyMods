@@ -1,0 +1,4 @@
+{
+  "config.startingMoney.name": "Starting Money",
+  "config.startingMoney.tooltip": "The amount of money you start with on a new save. Default is 500g."
+}
