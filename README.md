@@ -1,2 +1,2 @@
-# AdjustableStartingMoney
-A Stardew Valley mod that lets players configure how much money they start with on a new save.
+# Stardew Valley Mods
+A repo to store all my Stardew Valley mods.
