@@ -48,9 +48,10 @@ namespace VetoCV.AdjustableStartingMoney
 
         private void OnSaveLoaded(object? sender, SaveLoadedEventArgs e)
         {
-            if (Game1.stats.DaysPlayed == 1)
+            if (Game1.stats.DaysPlayed == 1 && Context.IsMainPlayer)
             {
                 Game1.player.Money = Config.StartingMoney;
+                //Setting total money earned to 0 as our changes would update both Current Funds and Total Earnings otherwise
                 Game1.player.totalMoneyEarned = 0;
                 Monitor.Log($"Applied starting money: {Config.StartingMoney}g", LogLevel.Info);
             }
@@ -73,6 +74,5 @@ namespace VetoCV.AdjustableStartingMoney
             Helper.WriteConfig(Config);
             Monitor.Log(Helper.Translation.Get("command.set.success", new { value = amount }), LogLevel.Info);
         }
-
     }
 }
