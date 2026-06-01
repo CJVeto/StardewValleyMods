@@ -1,4 +1,8 @@
 {
   "config.startingMoney.name": "Starting Money",
-  "config.startingMoney.tooltip": "The amount of money you start with on a new save. Default is 500g."
+  "config.startingMoney.tooltip": "The amount of money you start with on a new save. Default is 500g.",
+  "command.show.message": "Starting money is set to: {{value}}g",
+  "command.set.success": "Starting money set to: {{value}}g",
+  "command.set.invalid": "Invalid amount. Usage: asm_set <amount> (must be 0 or a positive integer)",
+  "command.set.saved": "Config saved: StartingMoney = {{value}}g"
 }
