@@ -1,11 +1,9 @@
 ﻿using StardewModdingAPI;
 using StardewModdingAPI.Events;
-using StardewModdingAPI.Integrations.GenericModConfigMenu;
 using StardewValley;
 
 namespace VetoCV.AdjustableStartingMoney
 {
-
     internal class ModEntry : Mod
     {
         private ModConfig Config = null!;
@@ -20,7 +18,6 @@ namespace VetoCV.AdjustableStartingMoney
             helper.ConsoleCommands.Add("asm_set", "Sets the starting money amount. Usage: asm_set <amount>", OnSetCommand);
 
             Monitor.Log($"Loaded config: StartingMoney = {Config.StartingMoney}g", LogLevel.Trace);
-
         }
 
         private void OnGameLaunched(object? sender, GameLaunchedEventArgs e)
@@ -58,6 +55,7 @@ namespace VetoCV.AdjustableStartingMoney
                 Monitor.Log($"Applied starting money: {Config.StartingMoney}g", LogLevel.Info);
             }
         }
+
         private void OnShowCommand(string command, string[] args)
         {
             Monitor.Log(Helper.Translation.Get("command.show.message", new { value = Config.StartingMoney }), LogLevel.Info);
